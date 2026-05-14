@@ -536,7 +536,7 @@
         }
 
         /* ════════════════════════════════════
-           SLIDESHOW COMPONENT (IMAGES ADDED)
+           SLIDESHOW COMPONENT
         ════════════════════════════════════ */
         .slideshow-wrap {
             position: relative;
@@ -1077,26 +1077,18 @@
             background: linear-gradient(90deg, var(--ps-teal) 0%, var(--ps-teal-lt) 100%);
         }
 
-        /* PS slide backgrounds (fallback gradients) */
+        /* PS slide fallback backgrounds (shown if images fail to load) */
         #ps .slide:nth-child(1) .slide-bg {
-            background:
-                radial-gradient(ellipse 80% 60% at 60% 30%, rgba(127, 189, 202, .16) 0%, transparent 65%),
-                linear-gradient(145deg, #4a4a4a 0%, #555 50%, #444 100%);
+            background: linear-gradient(145deg, #4a4a4a 0%, #555 50%, #444 100%);
         }
         #ps .slide:nth-child(2) .slide-bg {
-            background:
-                radial-gradient(ellipse 60% 70% at 30% 50%, rgba(127, 189, 202, .14) 0%, transparent 60%),
-                linear-gradient(160deg, #505050 0%, #555 60%, #3d3d3d 100%);
+            background: linear-gradient(160deg, #505050 0%, #555 60%, #3d3d3d 100%);
         }
         #ps .slide:nth-child(3) .slide-bg {
-            background:
-                radial-gradient(ellipse 75% 55% at 70% 40%, rgba(127, 189, 202, .10) 0%, transparent 55%),
-                linear-gradient(125deg, #4d4d4d 0%, #555 50%, #484848 100%);
+            background: linear-gradient(125deg, #4d4d4d 0%, #555 50%, #484848 100%);
         }
         #ps .slide:nth-child(4) .slide-bg {
-            background:
-                radial-gradient(ellipse 65% 75% at 45% 55%, rgba(127, 189, 202, .15) 0%, transparent 60%),
-                linear-gradient(155deg, #525252 0%, #555 55%, #404040 100%);
+            background: linear-gradient(155deg, #525252 0%, #555 55%, #404040 100%);
         }
 
         #ps .slide::before {
@@ -1148,7 +1140,7 @@
             margin: 2.5rem 0;
         }
 
-        /* About 2-col – now with real photo */
+        /* About 2-col */
         .ps-about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1613,15 +1605,7 @@
                     </div>
                 </div>
                 <div class="heritage-image rx d3">
-                    <div class="heritage-art">
-                        <svg viewBox="0 0 100 120" fill="none" stroke="#ffffff" stroke-width=".8" opacity=".35">
-                            <rect x="15" y="15" width="70" height="90" rx="1"/>
-                            <rect x="25" y="25" width="50" height="70" rx="1"/>
-                            <line x1="50" y1="15" x2="50" y2="105"/>
-                            <line x1="15" y1="60" x2="85" y2="60"/>
-                            <circle cx="50" cy="60" r="8"/>
-                        </svg>
-                    </div>
+                    <img src="mmm.png" alt="M&M Furniture" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">
                 </div>
             </div>
         </section>
@@ -1711,13 +1695,15 @@
         </div>
         <a href="#ps-contact" class="floating-cta">Free Quote <span>→</span></a>
 
-        <!-- SLIDESHOW WITH IMAGES -->
+        <!-- SLIDESHOW – YOUR OWN IMAGES -->
         <div class="slideshow-wrap">
             <div class="slide-progress" id="ps-progress"></div>
             <div class="slides-track" id="ps-track">
+
+                <!-- Slide 1 – ppone.avif -->
                 <div class="slide s-active">
                     <div class="slide-bg">
-                        <img src="https://images.unsplash.com/photo-1562259949-c8f4e7e7e66e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Precision spray painting equipment" loading="lazy">
+                        <img src="ppone.avif" alt="Pro Spray project 1" loading="eager">
                     </div>
                     <div class="slide-overlay"></div>
                     <div class="slide-content">
@@ -1726,9 +1712,11 @@
                         <p class="slide-sub">Professional spray finishing across the North East</p>
                     </div>
                 </div>
+
+                <!-- Slide 2 – pptwo.avif -->
                 <div class="slide">
                     <div class="slide-bg">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e6b4f4f3d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Industrial steel structure coating" loading="lazy">
+                        <img src="pptwo.avif" alt="Pro Spray project 2" loading="lazy">
                     </div>
                     <div class="slide-overlay"></div>
                     <div class="slide-content">
@@ -1737,9 +1725,11 @@
                         <p class="slide-sub">Heavy-duty protection for steel, machinery &amp; facilities</p>
                     </div>
                 </div>
+
+                <!-- Slide 3 – ppthree.avif -->
                 <div class="slide">
                     <div class="slide-bg">
-                        <img src="https://images.unsplash.com/photo-1558618666-1b7f8c7f1c1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Kitchen cabinet respray" loading="lazy">
+                        <img src="ppthree.avif" alt="Pro Spray project 3" loading="lazy">
                     </div>
                     <div class="slide-overlay"></div>
                     <div class="slide-content">
@@ -1748,9 +1738,11 @@
                         <p class="slide-sub">Kitchens, cabinetry &amp; woodwork — flawless every time</p>
                     </div>
                 </div>
+
+                <!-- Slide 4 – pp4.avif -->
                 <div class="slide">
                     <div class="slide-bg">
-                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5f612a3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Automotive grade high-gloss finish" loading="lazy">
+                        <img src="pp4.avif" alt="Pro Spray project 4" loading="lazy">
                     </div>
                     <div class="slide-overlay"></div>
                     <div class="slide-content">
@@ -1759,6 +1751,7 @@
                         <p class="slide-sub">High-gloss durable surfaces for premium components</p>
                     </div>
                 </div>
+
             </div>
             <div class="slide-controls">
                 <button class="slide-btn" id="ps-prev" aria-label="Prev">
@@ -1771,7 +1764,7 @@
             <div class="slide-dots" id="ps-dots"></div>
         </div>
 
-        <!-- ABOUT (with real photo) -->
+        <!-- ABOUT -->
         <section class="ps-section alt">
             <div class="ps-about-grid">
                 <div>
@@ -1791,7 +1784,7 @@
             </div>
         </section>
 
-        <!-- SERVICES (unchanged) -->
+        <!-- SERVICES -->
         <section class="ps-section dark">
             <p class="eyebrow rx" style="text-align:center;">Our Services</p>
             <h2 class="display-title rx d1" style="text-align:center;">What We Offer</h2>
@@ -1814,7 +1807,7 @@
             </div>
         </section>
 
-        <!-- TESTIMONIALS (unchanged) -->
+        <!-- TESTIMONIALS -->
         <section class="ps-section alt">
             <p class="eyebrow rx" style="text-align:center;">Testimonials</p>
             <h2 class="display-title rx d1" style="text-align:center;">Trusted by Many</h2>
@@ -1837,7 +1830,7 @@
             </div>
         </section>
 
-        <!-- CONTACT (with id for CTA scroll) -->
+        <!-- CONTACT -->
         <section class="ps-section dark" id="ps-contact">
             <div class="ps-contact-grid">
                 <div>
